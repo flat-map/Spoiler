@@ -4,10 +4,10 @@ Spoiler is the best c language formatter for when you want to screw everything u
 # Demo
 
 Before using spoiler:
-<img src="spoiler-before.png">
+<img src="spoiler-before.png" width="300">
 
 After using spoiler:
-<img src="spoiler-after.png">
+<img src="spoiler-after.png" width="300">
 
 It could be said that this is a message to modern society, which is too caught up in superficial beauty.
 
