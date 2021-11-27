@@ -74,7 +74,7 @@ tokens
                     if      (r <= 95) {$$.str += " ";}              // 40%
                     else if (r <= 97) {$$.str += "\n";}             // 2%
                     else if (r == 98) {$$.str += "\n  ";}           // 1%
-                    else if (r == 99) {$$.str += "\n        ";}      // 1%
+                    else if (r == 99) {$$.str += "\n        ";}     // 1%
                     else              {$$.str += "\n           ";}  // 1%
                 }
             }
@@ -83,9 +83,9 @@ tokens
                 r = rand() % 100 + 1;
                 if      (r <= 95) {$$.str += " ";}              // 95%
                 else if (r <= 97) {$$.str += "\n";}             // 2%
-                else if (r == 98) {$$.str += "\n   ";}           // 1%
-                else if (r == 99) {$$.str += "\n      ";}      // 1%
-                else              {$$.str += "\n            ";}  // 1%
+                else if (r == 98) {$$.str += "\n   ";}          // 1%
+                else if (r == 99) {$$.str += "\n      ";}       // 1%
+                else              {$$.str += "\n            ";} // 1%
             }
         #endif
 

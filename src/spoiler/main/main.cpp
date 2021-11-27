@@ -1,14 +1,13 @@
-#include <iostream>
 #include <fstream>
+#include <iostream>
+#include <spoiler/driver/driver.hpp>
 #include <sstream>
 #include <time.h>
-#include <spoiler/driver/driver.hpp>
 
-
-int main(int argc, char **argv) {
+int main(int argc, char** argv) {
     if (argc != 2) {
-        std::cerr << "[Error] Usage: " << argv[0] << ' '
-                  << "input-input_file" << std::endl;
+        std::cerr << "[Error] Usage: " << argv[0] << ' ' << "input-input_file"
+                  << std::endl;
         return 1;
     }
     const std::string filename = argv[1];
@@ -16,7 +15,8 @@ int main(int argc, char **argv) {
     std::ifstream input_file;
     input_file.open(filename);
     if (!input_file) {
-        std::cerr << "[Error] No such file or directory: '" << filename << "'" << std::endl;
+        std::cerr << "[Error] No such file or directory: '" << filename << "'"
+                  << std::endl;
         return 1;
     }
 
@@ -25,14 +25,19 @@ int main(int argc, char **argv) {
     std::ostringstream result;
     driver.parse(input_file, result);
 
+    /*
     std::ofstream output_file;
     output_file.open(filename);
     if (!output_file) {
-        std::cerr << "[Error] No such file or directory: '" << filename << "'" << std::endl;
+        std::cerr << "[Error] No such file or directory: '" << filename << "'"
+                  << std::endl;
         return 1;
     }
     output_file << result.str();
     output_file.close();
+    */
+
+    std::cout << result.str() << std::endl;
 
     return 0;
 }
