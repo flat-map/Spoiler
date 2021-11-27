@@ -51,7 +51,8 @@
 %%
 
 program
-    : tokens {out << $1.str;}
+    : %empty {out << "";}
+    | tokens {out << $1.str;}
     ;
 
 tokens

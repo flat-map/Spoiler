@@ -5,11 +5,12 @@
 #include <time.h>
 
 int main(int argc, char** argv) {
+
     if (argc != 2) {
-        std::cerr << "[Error] Usage: " << argv[0] << ' ' << "input-input_file"
-                  << std::endl;
-        return 1;
+        std::cerr << "[Error] Usage: spoiler input-file" << std::endl;
+        exit(1);
     }
+
     const std::string filename = argv[1];
 
     std::ifstream input_file;
@@ -25,7 +26,6 @@ int main(int argc, char** argv) {
     std::ostringstream result;
     driver.parse(input_file, result);
 
-    /*
     std::ofstream output_file;
     output_file.open(filename);
     if (!output_file) {
@@ -35,9 +35,8 @@ int main(int argc, char** argv) {
     }
     output_file << result.str();
     output_file.close();
-    */
 
-    std::cout << result.str() << std::endl;
+    std::cout << "[Success] formatted '" << filename << "'." << std::endl;
 
     return 0;
 }
