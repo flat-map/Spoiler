@@ -1,6 +1,16 @@
 # Spoiler
 Spoiler is the best c language formatter for when you want to screw everything up.
 
+# Demo
+
+Before using spoiler:
+<img src="spoiler-before.png">
+
+After using spoiler:
+<img src="spoiler-after.png">
+
+It could be said that this is a message to modern society, which is too caught up in superficial beauty.
+
 ## Usage
 The following command will format `hoge.c`.
 ```bash
