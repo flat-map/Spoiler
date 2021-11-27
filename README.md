@@ -1,5 +1,5 @@
 # Spoiler
-spoiler: The best c language formatter for when you want to screw everything up.
+Spoiler is the best c language formatter for when you want to screw everything up.
 
 ## Usage
 The following command will output the result of processing hoge.c to the console.
