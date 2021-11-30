@@ -1,7 +1,7 @@
 #pragma once
 
 #ifndef yyFlexLexerOnce
-#include <FlexLexer.h>
+#include <spoiler/lexer/FlexLexer.h>
 #endif
 
 #include <istream>

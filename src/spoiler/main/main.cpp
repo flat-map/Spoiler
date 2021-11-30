@@ -7,7 +7,7 @@
 int main(int argc, char** argv) {
 
     if (argc != 2) {
-        std::cerr << "[Error] Usage: spoiler input-file" << std::endl;
+        std::cerr << "[Error] spoiler requests 1 input file." << std::endl;
         exit(1);
     }
 
@@ -25,6 +25,7 @@ int main(int argc, char** argv) {
     yy::Driver driver;
     std::ostringstream result;
     driver.parse(input_file, result);
+    input_file.close();
 
     std::ofstream output_file;
     output_file.open(filename);
